@@ -28,6 +28,11 @@
 		9F4D43362D09E742005245F3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4D43352D09E742005245F3 /* HomeViewController.swift */; };
 		9F4D43392D09E77F005245F3 /* PlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4D43382D09E77F005245F3 /* PlaceTableViewCell.swift */; };
 		9F4D433C2D09F227005245F3 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4D433B2D09F227005245F3 /* PlaceModel.swift */; };
+		9F4D433E2D0A6770005245F3 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4D433D2D0A6770005245F3 /* Category.swift */; };
+		9F4D43412D0A67D3005245F3 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4D43402D0A67D3005245F3 /* HomeViewModel.swift */; };
+		9F4D43432D0A7832005245F3 /* PlaceAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4D43422D0A7832005245F3 /* PlaceAnnotation.swift */; };
+		9F4FAB6C2D0E1F5900FB9924 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4FAB6B2D0E1F5900FB9924 /* DetailsViewController.swift */; };
+		9F4FAB6E2D0E243800FB9924 /* WelcomeFlowDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4FAB6D2D0E243800FB9924 /* WelcomeFlowDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +78,11 @@
 		9F4D43352D09E742005245F3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		9F4D43382D09E77F005245F3 /* PlaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTableViewCell.swift; sourceTree = "<group>"; };
 		9F4D433B2D09F227005245F3 /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
+		9F4D433D2D0A6770005245F3 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		9F4D43402D0A67D3005245F3 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		9F4D43422D0A7832005245F3 /* PlaceAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceAnnotation.swift; sourceTree = "<group>"; };
+		9F4FAB6B2D0E1F5900FB9924 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		9F4FAB6D2D0E243800FB9924 /* WelcomeFlowDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeFlowDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +209,7 @@
 		9F287EA02D07BE8F0005FD3E /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				9F4FAB6A2D0E1F4300FB9924 /* Detail */,
 				9F4D43322D09E70B005245F3 /* HomeView */,
 				9F4D43262D09ACC9005245F3 /* WelcomeView */,
 				9F287EA12D07BE970005FD3E /* Splash */,
@@ -229,6 +240,7 @@
 			children = (
 				9F4D43272D09ACEB005245F3 /* WelcomeView.swift */,
 				9F4D43292D09B182005245F3 /* WelcomeViewController.swift */,
+				9F4FAB6D2D0E243800FB9924 /* WelcomeFlowDelegate.swift */,
 			);
 			path = WelcomeView;
 			sourceTree = "<group>";
@@ -244,6 +256,7 @@
 		9F4D43322D09E70B005245F3 /* HomeView */ = {
 			isa = PBXGroup;
 			children = (
+				9F4D433F2D0A67B9005245F3 /* ViewModel */,
 				9F4D43372D09E763005245F3 /* TableView */,
 				9F4D43332D09E72C005245F3 /* HomeView.swift */,
 				9F4D43352D09E742005245F3 /* HomeViewController.swift */,
@@ -263,8 +276,26 @@
 			isa = PBXGroup;
 			children = (
 				9F4D433B2D09F227005245F3 /* PlaceModel.swift */,
+				9F4D433D2D0A6770005245F3 /* Category.swift */,
+				9F4D43422D0A7832005245F3 /* PlaceAnnotation.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		9F4D433F2D0A67B9005245F3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9F4D43402D0A67D3005245F3 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9F4FAB6A2D0E1F4300FB9924 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				9F4FAB6B2D0E1F5900FB9924 /* DetailsViewController.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -396,16 +427,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F4D43412D0A67D3005245F3 /* HomeViewModel.swift in Sources */,
 				9F287E9C2D07BC950005FD3E /* Colors.swift in Sources */,
 				9F4D43342D09E72C005245F3 /* HomeView.swift in Sources */,
+				9F4FAB6E2D0E243800FB9924 /* WelcomeFlowDelegate.swift in Sources */,
 				9F4D433C2D09F227005245F3 /* PlaceModel.swift in Sources */,
 				9F4D432A2D09B182005245F3 /* WelcomeViewController.swift in Sources */,
 				9F287E9F2D07BD1B0005FD3E /* NearbyFlowController.swift in Sources */,
+				9F4D433E2D0A6770005245F3 /* Category.swift in Sources */,
 				9F287E652D07B29A0005FD3E /* ViewController.swift in Sources */,
 				9F4D43362D09E742005245F3 /* HomeViewController.swift in Sources */,
 				9F287EA32D07BEB50005FD3E /* SplashViewController.swift in Sources */,
 				9F4D43282D09ACEB005245F3 /* WelcomeView.swift in Sources */,
+				9F4FAB6C2D0E1F5900FB9924 /* DetailsViewController.swift in Sources */,
 				9F4D432F2D09BF04005245F3 /* UIViewController+ext.swift in Sources */,
+				9F4D43432D0A7832005245F3 /* PlaceAnnotation.swift in Sources */,
 				9F4D43252D09A8B8005245F3 /* TipsView.swift in Sources */,
 				9F287E612D07B29A0005FD3E /* AppDelegate.swift in Sources */,
 				9F4D43392D09E77F005245F3 /* PlaceTableViewCell.swift in Sources */,
